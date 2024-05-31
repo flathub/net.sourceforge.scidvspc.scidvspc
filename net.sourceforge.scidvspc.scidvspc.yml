@@ -45,8 +45,8 @@ modules:
       - install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.24.tgz
-        sha256: c782e39f5bda5ebb9ed7a914a1f5801f6b033580bc87736fcc58df7d1a341210
+        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.25.tgz
+        sha256: 102b46680b1f7807d2157fe8e2f2474c183161dde65ab44a379ac9ab4272de45
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
