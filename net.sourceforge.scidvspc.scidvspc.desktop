@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=scidvspc
 GenericName="scidvspc"
-Comment="Chess GUI"
+Comment="Chess Toolkit"
 Exec=scid
 Icon=scid
 Terminal=false
