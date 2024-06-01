@@ -4,7 +4,7 @@
     <metadata_license>CC0-1.0</metadata_license>
     <project_license>GPL-2.0</project_license>
     <name>ScidvsPC</name>
-    <summary>Chess GUI</summary>
+    <summary>Chess Toolkit</summary>
     <developer_name>scidvspc</developer_name>
     <description>
 		<p>Chess GUI with the ability to run detailed chess analysis, 
@@ -31,6 +31,6 @@
         <content_attribute id="social-info">mild</content_attribute>
     </content_rating>
     <releases>
-	<release version="4.24" date="2023-05-01"></release>
+	<release version="4.25" date="2024-05-31"></release>
     </releases>
 </component>

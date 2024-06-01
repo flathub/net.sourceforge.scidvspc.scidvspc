@@ -16,8 +16,8 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/tcl/tcl8.6.13-src.tar.gz
-        sha256: 43a1fae7412f61ff11de2cfd05d28cfc3a73762f354a417c62370a54e2caf066
+        url: https://prdownloads.sourceforge.net/tcl/tcl8.6.14-src.tar.gz
+        sha256: 5880225babf7954c58d4fb0f5cf6279104ce1cd6aa9b71e9a6322540e1c4de66
     subdir: "unix"
     post-install:
       - chmod 755 /app/lib/libtcl*.so
@@ -25,8 +25,8 @@ modules:
   - name: tk
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/tcl/tk8.6.13-src.tar.gz
-        sha256: 2e65fa069a23365440a3c56c556b8673b5e32a283800d8d9b257e3f584ce0675
+        url: https://prdownloads.sourceforge.net/tcl/tk8.6.14-src.tar.gz
+        sha256: 8ffdb720f47a6ca6107eac2dd877e30b0ef7fac14f3a84ebbd0b3612cee41a94
     subdir: "unix"
     post-install:
       - chmod 755 /app/lib/libtk*.so
@@ -45,11 +45,10 @@ modules:
       - install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.24.tgz
-        sha256: c782e39f5bda5ebb9ed7a914a1f5801f6b033580bc87736fcc58df7d1a341210
+        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.25.tgz
+        sha256: 102b46680b1f7807d2157fe8e2f2474c183161dde65ab44a379ac9ab4272de45
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.desktop
-      - type: patch
-        path: configure.patch
+
