@@ -7,10 +7,10 @@ rename-icon: scid #128x128
 
 finish-args:
   - --filesystem=xdg-documents
-  - --share=network     
-  - --socket=x11           
-  - --share=ipc         
-  - --device=dri         
+  - --share=network
+  - --socket=fallback-x11
+  - --share=ipc
+  - --device=dri
   - --persist=.scidvspc
 modules:
   - name: tcl
@@ -46,7 +46,7 @@ modules:
     sources:
       - type: archive
         url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.25.tgz
-        sha256: 102b46680b1f7807d2157fe8e2f2474c183161dde65ab44a379ac9ab4272de45
+        sha256: 619b01c08a79a2e1a4ef9c2c032c2e63235278d8c2031d225a0880ed89949a79
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
