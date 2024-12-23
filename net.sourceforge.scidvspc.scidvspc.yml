@@ -16,8 +16,8 @@ modules:
   - name: tcl
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/tcl/tcl8.6.14-src.tar.gz
-        sha256: 5880225babf7954c58d4fb0f5cf6279104ce1cd6aa9b71e9a6322540e1c4de66
+        url: https://prdownloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz
+        sha256: 91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5
     subdir: "unix"
     post-install:
       - chmod 755 /app/lib/libtcl*.so
@@ -25,8 +25,8 @@ modules:
   - name: tk
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/tcl/tk8.6.14-src.tar.gz
-        sha256: 8ffdb720f47a6ca6107eac2dd877e30b0ef7fac14f3a84ebbd0b3612cee41a94
+        url: https://prdownloads.sourceforge.net/tcl/tk8.6.16-src.tar.gz
+        sha256: be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
     subdir: "unix"
     post-install:
       - chmod 755 /app/lib/libtk*.so
@@ -46,7 +46,7 @@ modules:
     sources:
       - type: archive
         url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.25.tgz
-        sha256: 102b46680b1f7807d2157fe8e2f2474c183161dde65ab44a379ac9ab4272de45
+        sha256: 619b01c08a79a2e1a4ef9c2c032c2e63235278d8c2031d225a0880ed89949a79
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
