@@ -1,6 +1,6 @@
 app-id: net.sourceforge.scidvspc.scidvspc
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
 command: scid
 rename-icon: scid #128x128
