@@ -43,10 +43,11 @@ modules:
       - install -Dm644 icons/scid.png /app/share/icons/hicolor/128x128/apps/scid.png
       - install -Dm644 ${FLATPAK_ID}.desktop /app/share/applications/${FLATPAK_ID}.desktop
       - install -Dm644 ${FLATPAK_ID}.appdata.xml /app/share/appdata/${FLATPAK_ID}.appdata.xml
+      - desktop-file-edit --set-key=Keywords --set-value="chess;games;" /app/share/applications/net.sourceforge.scidvspc.scidvspc.desktop
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.25.tgz
-        sha256: 619b01c08a79a2e1a4ef9c2c032c2e63235278d8c2031d225a0880ed89949a79
+        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.26.tgz
+        sha256: 88ae21ed84bcf96da7af705b99a8b812bbedd185982a0910699e481fb43d1e41
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
