@@ -47,7 +47,7 @@ modules:
     sources:
       - type: archive
         url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.26.tgz
-        sha256: 88ae21ed84bcf96da7af705b99a8b812bbedd185982a0910699e481fb43d1e41
+        sha256: 386eda599c058c3da9fef64de2f5248d51204e00715b94babeb09976c36afa87
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
