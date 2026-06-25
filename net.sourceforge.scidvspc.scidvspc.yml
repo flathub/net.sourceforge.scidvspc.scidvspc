@@ -12,26 +12,27 @@ finish-args:
   - --share=ipc         
   - --device=dri         
   - --persist=.scidvspc
+  
 modules:
   - name: tcl
+    post-install:
+      - chmod 755 /app/lib/libtcl*.so
+    subdir: "unix"
     sources:
       - type: archive
         url: https://prdownloads.sourceforge.net/tcl/tcl8.6.16-src.tar.gz
         sha256: 91cb8fa61771c63c262efb553059b7c7ad6757afa5857af6265e4b0bdc2a14a5
-    subdir: "unix"
-    post-install:
-      - chmod 755 /app/lib/libtcl*.so
   
   - name: tk
-    sources:
-      - type: archive
-        url: https://prdownloads.sourceforge.net/tcl/tk8.6.16-src.tar.gz
-        sha256: be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
     subdir: "unix"
     post-install:
       - chmod 755 /app/lib/libtk*.so
       - ln -s /app/bin/tclsh8.6 /app/bin/tclsh
       - ln -s /app/bin/wish8.6 /app/bin/wish
+    sources:
+      - type: archive
+        url: https://prdownloads.sourceforge.net/tcl/tk8.6.16-src.tar.gz
+        sha256: be9f94d3575d4b3099d84bc3c10de8994df2d7aa405208173c709cc404a7e5fe
   
   - name: scidvspc
     buildsystem: autotools
@@ -46,8 +47,8 @@ modules:
       - desktop-file-edit --set-key=Keywords --set-value="chess;games;" /app/share/applications/net.sourceforge.scidvspc.scidvspc.desktop
     sources:
       - type: archive
-        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.26.tgz
-        sha256: 386eda599c058c3da9fef64de2f5248d51204e00715b94babeb09976c36afa87
+        url: https://prdownloads.sourceforge.net/scidvspc/scid_vs_pc-4.27.tgz
+        sha256: 0e2bc2177c821e61b2a6cecf4d4d7129c746fa805e803fe7b4cb2df6b3abd135
       - type: file
         path: net.sourceforge.scidvspc.scidvspc.appdata.xml
       - type: file
